@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Historias al Estilo Instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+             }
+
+             .stories-container {
+            display: flex;
+            justify-content: space-between; /* Distribuye el espacio entre los elementos */
+            margin-top: -10px; /* Ajusta el margen superior según sea necesario */
+
+            }
+
+
+
+        .story {
+            text-align: center;
+            cursor: pointer;
+            }
+
+        .circle {
+            width: 80px;
+            height: 80px;
+            background-color: #ddd;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle:hover {
+            background-color: #bbb; /* Cambia el color al pasar el mouse */
+        }
+
+        .modal {
+            display: none; /* Oculto por defecto */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        footer {
+        position: fixed; /* Hace que el footer esté fijo en la parte inferior */
+        bottom: 0; /* Alinea el footer a la parte inferior de la ventana */
+        left: 0; /* Alinea el footer al lado izquierdo de la ventana */
+        background-color: white;
+        color: white;
+        display: flex;
+        justify-content: center; /* Centra los logos en el footer */
+        align-items: center; /* Centra los logos verticalmente */
+        width: 100%; /* Asegura que el footer ocupe todo el ancho de la página */
+        z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+        border-top: 2px solid black; /* Agrega una línea negra de 2px en la parte superior */
+    }
+
+        footer img {
+        width: 50px; /* Ancho de los logos */
+        height: auto; /* Mantiene la proporción */
+        margin: 10px 5px; /* Espacio entre los logos (10px arriba y abajo, 15px a los lados) */
+        background-color:white; /* Color de fondo para visualizar el espacio */
+        }
+
+        .separator {
+        width: 1px; /* Ancho de la barra */
+        height: 50px; /* Altura de la barra */
+        background-color: rgb(10, 10, 10); /* Color de la barra */
+        margin: 0 10px; /* Espacio a los lados de la barra */
+        }
+    </style>
+</head>
+<body>
+ <!-- 
+    <div class="stories-container">
+        <div class="story" onclick="openStory('css')">
+            <div class="circle"></div>
+            <span>Carta</span>
+        </div>
+        <div class="story" onclick="openStory('img3.jpg')">
+            <div class="circle"></div>
+            <span>Productos</span>
+        </div>
+        <div class="story" onclick="openStory('img3.jpg')">
+            <div class="circle"></div>
+            <span>¿Como Pedir?</span>
+        </div>
+        <div class="story" onclick="openStory('img/fede.png')">
+            <div class="circle"></div>
+            <span>¿Quienes somos?</span>
+        </div>
+    </div>
+
+    <div class="modal" id="modal" onclick="closeModal()">
+        <img id="modal-img" src="" alt="Historia" />
+    </div>-->
+
+   <!-- <script src="scripts.js"></script>-->
+</body>
+
+<footer>
+    <a href="index.html"> 
+        <img src="img/casa.png" alt="Logo 1">
+    </a>
+    <div class="separator"></div> 
+    
+    <a href="productos.html">
+        <img src="img/menu.png" alt="Logo 2">
+    </a>
+    <div class="separator"></div> 
+
+    <a href="promociones.html"> 
+        <img src="img/promocion.png" alt="Logo 3">
+    </a>
+    <div class="separator"></div>
+
+    <a href="productos-ventas.html"> 
+        <img src="img/pizza.png" alt="Logo 4">
+    </a>
+    <div class="separator"></div> 
+
+    <a href="detalles.html"> 
+        <img src="img/carrito-de-compras.png" alt="Logo 5">
+    </a>
+</footer>
+
+</html>
